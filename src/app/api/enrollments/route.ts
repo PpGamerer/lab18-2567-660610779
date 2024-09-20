@@ -178,7 +178,7 @@ export const DELETE = async (request: NextRequest) => {
   const token = rawAuthHeader.split(" ")[1];
 
   const secret = process.env.JWT_SECRET || "This is my special secret";
-  
+
   //verify token and get "studentId" and "role" information here
   let studentId = null;
   let role = null;
